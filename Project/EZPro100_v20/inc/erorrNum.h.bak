@@ -1,0 +1,20 @@
+#ifndef erorrNum_h
+#define erorrNum_h
+
+//MC20P24B_Program
+#define		IRC_ModeIn_false	2	//IRC校准 进入模式失败
+#define		IRC_Value_false		3	//IRC校准频率值 超出范围
+#define		OTP_ModeIn_false	4	//进入烧写模式失败
+#define		VDD_Test_false		5	//VDD电压超出 7.0V~6.2V范围
+#define		VPP_Test_false		6	//VPP电压超出13V~~11.5V范围
+#define		IRC_Write_false		7	//IRC校准值烧写失败
+#define		ROM_Write_false		8	//ROM区数据烧写失败
+
+#define		FM_Read_false		9	//程序缓存区读取失败
+#define		OPTION_Write_false	10	//OPTION值烧写失败
+#define		Program_Erorr		11	//烧写异常
+#define		IRC_Value_0XFF		12	//校准结果为 0XFF
+
+
+
+#endif

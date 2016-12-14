@@ -1,0 +1,1181 @@
+###############################################################################
+#                                                                             #
+# IAR ELF Linker V6.70.1.5641/W32 for ARM               17/Jun/2016  14:09:30 #
+# Copyright 2007-2013 IAR Systems AB.                                         #
+#                                                                             #
+#    Output file  =  E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Exe\EZPro100_v20.out                       #
+#    Map file     =  E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\List\EZPro100_v20.map                      #
+#    Command line =  E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\ADC.o E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾ #
+#                    ¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\Pro #
+#                    ject\EZPro100_v20\EWARM\STM3210E-EVAL\Obj\Config.o       #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\core_cm3.o                             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\global.o E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß° #
+#                    æ±¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\ #
+#                    Project\EZPro100_v20\EWARM\STM3210E-EVAL\Obj\hw_config.o #
+#                     E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2 #
+#                    .96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM #
+#                    \STM3210E-EVAL\Obj\IRC.o E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ± #
+#                    ¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\Pr #
+#                    oject\EZPro100_v20\EWARM\STM3210E-EVAL\Obj\lcd.o         #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\M201IRC.o                              #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\main.o E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ± #
+#                    ¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\Pr #
+#                    oject\EZPro100_v20\EWARM\STM3210E-EVAL\Obj\MC20P02BPro.o #
+#                     E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2 #
+#                    .96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM #
+#                    \STM3210E-EVAL\Obj\MC20P38IRC.o                          #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC20P38Pro.o                           #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC224BPro.o                            #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC301Pro.o                             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC30P6060.o                            #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC32P21Pro.o                           #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC32P5222Pro.o                         #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC32P7011.o                            #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC32P7022.o                            #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC32P7311.o                            #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC32T8132.o                            #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC33P116Pro.o                          #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\MC9033.o E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß° #
+#                    æ±¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\ #
+#                    Project\EZPro100_v20\EWARM\STM3210E-EVAL\Obj\misc.o      #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\otgd_fs_cal.o                          #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\otgd_fs_dev.o                          #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\otgd_fs_int.o                          #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\otgd_fs_pcd.o                          #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\OTPRW.o E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ #
+#                    ±¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\P #
+#                    roject\EZPro100_v20\EWARM\STM3210E-EVAL\Obj\OTPRW_8K.o   #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\power.o E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ #
+#                    ±¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\P #
+#                    roject\EZPro100_v20\EWARM\STM3210E-EVAL\Obj\spi.o        #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\startup_stm32f10x_hd.o                 #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32_eval.o                           #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_adc.o                        #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_dma.o                        #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_exti.o                       #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_flash.o                      #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_gpio.o                       #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_i2c.o                        #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_it.o                         #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_pwr.o                        #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_rcc.o                        #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_spi.o                        #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_tim.o                        #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\stm32f10x_usart.o                      #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\system_stm32f10x.o                     #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\test.o E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ± #
+#                    ¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\Pr #
+#                    oject\EZPro100_v20\EWARM\STM3210E-EVAL\Obj\usb_core.o    #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_desc.o                             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_endp.o                             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_init.o                             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_int.o                              #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_istr.o                             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_mem.o                              #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_prop.o                             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_pwr.o                              #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_regs.o                             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\USB_Rx_Tx.o                            #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\usb_sil.o                              #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Obj\wx_i2c.o --redirect                    #
+#                    _Printf=_PrintfLarge --redirect _Scanf=_ScanfFull -o     #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\Exe\EZPro100_v20.out --map                 #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    STM3210E-EVAL\List\EZPro100_v20.map --config             #
+#                    E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2. #
+#                    96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\ #
+#                    stm32f10x_flash.icf --semihosting --entry                #
+#                    __iar_program_start --vfe                                #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A1":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x080fffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20017fff] { rw, block CSTACK, block HEAP };
+
+  Section            Kind        Address     Size  Object
+  -------            ----        -------     ----  ------
+"A1":                                       0x130
+  .intvec            ro code  0x08000000    0x130  startup_stm32f10x_hd.o [1]
+                            - 0x08000130    0x130
+
+"P1":                                     0x1badc
+  .text              ro code  0x08000130   0x4da4  MC32P21Pro.o [1]
+  .text              ro code  0x08004ed4   0x1978  MC30P6060.o [1]
+  .text              ro code  0x0800684c   0x1870  MC32T8132.o [1]
+  .text              ro code  0x080080bc    0xf4c  MC32P7011.o [1]
+  .text              ro code  0x08009008   0x3320  MC33P116Pro.o [1]
+  .text              ro code  0x0800c328   0x21ec  MC32P5222Pro.o [1]
+  .text              ro code  0x0800e514    0x1f4  stm32f10x_gpio.o [1]
+  .text              ro code  0x0800e708    0x19c  power.o [1]
+  .text              ro code  0x0800e8a4    0x1c0  IRC.o [1]
+  .text              ro code  0x0800ea64    0x51c  global.o [1]
+  .text              ro code  0x0800ef80    0x564  spi.o [1]
+  .text              ro code  0x0800f4e4   0x1194  MC9033.o [1]
+  .text              ro code  0x08010678   0x10c4  MC301Pro.o [1]
+  .text              ro code  0x0801173c    0x224  stm32f10x_tim.o [1]
+  .text              ro code  0x08011960    0x4bc  MC32P7311.o [1]
+  .text              ro code  0x08011e1c    0xa08  MC32P7022.o [1]
+  .text              ro code  0x08012824     0x70  stm32f10x_rcc.o [1]
+  .text              ro code  0x08012894    0x158  system_stm32f10x.o [1]
+  .text              ro code  0x080129ec   0x1328  lcd.o [1]
+  .text              ro code  0x08013d14    0x32e  wx_i2c.o [1]
+  .text              ro code  0x08014042     0x22  zero_init3.o [4]
+  .text              ro code  0x08014064     0x7c  stm32f10x_spi.o [1]
+  .text              ro code  0x080140e0    0x148  ADC.o [1]
+  .text              ro code  0x08014228    0x1de  stm32f10x_adc.o [1]
+  .text              ro code  0x08014408    0xed8  USB_Rx_Tx.o [1]
+  .text              ro code  0x080152e0    0xc00  OTPRW_8K.o [1]
+  .text              ro code  0x08015ee0    0xc24  OTPRW.o [1]
+  .text              ro code  0x08016b04    0x2ce  usb_regs.o [1]
+  .text              ro code  0x08016dd2     0x6e  usb_mem.o [1]
+  .text              ro code  0x08016e40    0xcae  usb_core.o [1]
+  .text              ro code  0x08017af0    0x9d4  MC20P02BPro.o [1]
+  .text              ro code  0x080184c4    0x8b4  MC20P38IRC.o [1]
+  .text              ro code  0x08018d78    0x7fc  M201IRC.o [1]
+  .text              ro code  0x08019574    0x50c  MC20P38Pro.o [1]
+  .text              ro code  0x08019a80    0x504  MC224BPro.o [1]
+  .text              ro code  0x08019f84    0x4f4  main.o [1]
+  .text              ro code  0x0801a478    0x344  test.o [1]
+  .text              ro code  0x0801a7bc    0x180  hw_config.o [1]
+  .text              ro code  0x0801a93c     0x40  usb_init.o [1]
+  .text              ro code  0x0801a97c     0x88  misc.o [1]
+  .text              ro code  0x0801aa04    0x270  usb_prop.o [1]
+  .text              ro code  0x0801ac74     0x48  usb_pwr.o [1]
+  .text              ro code  0x0801acbc     0x54  usb_sil.o [1]
+  .text              ro code  0x0801ad10    0x250  usb_int.o [1]
+  .text              ro code  0x0801af60    0x1cc  lz77_init.o [4]
+  .text              ro code  0x0801b12c      0x6  abort.o [3]
+  .text              ro code  0x0801b134     0x14  exit.o [5]
+  .text              ro code  0x0801b148     0x74  usb_istr.o [1]
+  .text              ro code  0x0801b1bc     0x48  usb_endp.o [1]
+  .rodata            const    0x0801b204     0x44  usb_desc.o [1]
+  .rodata            const    0x0801b248     0x38  MC20P38IRC.o [1]
+  .rodata            const    0x0801b280     0x34  usb_desc.o [1]
+  .rodata            const    0x0801b2b4     0x28  usb_desc.o [1]
+  .text              ro code  0x0801b2dc     0x28  data_init.o [4]
+  .iar.init_table    const    0x0801b304     0x2c  - Linker created -
+  .rodata            const    0x0801b330     0x20  lcd.o [1]
+  .rodata            const    0x0801b350     0x20  lcd.o [1]
+  .rodata            const    0x0801b370     0x20  lcd.o [1]
+  .rodata            const    0x0801b390     0x20  lcd.o [1]
+  .rodata            const    0x0801b3b0     0x20  lcd.o [1]
+  .rodata            const    0x0801b3d0     0x20  lcd.o [1]
+  .rodata            const    0x0801b3f0     0x20  M201IRC.o [1]
+  .rodata            const    0x0801b410     0x1c  MC20P38IRC.o [1]
+  .text              ro code  0x0801b42c     0x1a  stm32f10x_it.o [1]
+  .text              ro code  0x0801b448     0x1a  cmain.o [4]
+  .text              ro code  0x0801b462      0x4  low_level_init.o [3]
+  .text              ro code  0x0801b466      0x4  exit.o [3]
+  .text              ro code  0x0801b46c      0xa  cexit.o [4]
+  .rodata            const    0x0801b478     0x14  MC20P38IRC.o [1]
+  .rodata            const    0x0801b48c     0x14  usb_desc.o [1]
+  .rodata            const    0x0801b4a0     0x10  lcd.o [1]
+  .rodata            const    0x0801b4b0     0x10  lcd.o [1]
+  .rodata            const    0x0801b4c0     0x10  lcd.o [1]
+  .rodata            const    0x0801b4d0     0x10  lcd.o [1]
+  .rodata            const    0x0801b4e0     0x10  lcd.o [1]
+  .rodata            const    0x0801b4f0     0x10  lcd.o [1]
+  .rodata            const    0x0801b500     0x10  lcd.o [1]
+  .rodata            const    0x0801b510     0x10  lcd.o [1]
+  .rodata            const    0x0801b520     0x10  lcd.o [1]
+  .rodata            const    0x0801b530     0x10  lcd.o [1]
+  .rodata            const    0x0801b540     0x10  lcd.o [1]
+  .rodata            const    0x0801b550     0x10  lcd.o [1]
+  .rodata            const    0x0801b560     0x10  lcd.o [1]
+  .rodata            const    0x0801b570     0x10  lcd.o [1]
+  .rodata            const    0x0801b580     0x10  lcd.o [1]
+  .rodata            const    0x0801b590     0x10  lcd.o [1]
+  .rodata            const    0x0801b5a0     0x10  lcd.o [1]
+  .rodata            const    0x0801b5b0     0x10  lcd.o [1]
+  .rodata            const    0x0801b5c0     0x10  lcd.o [1]
+  .rodata            const    0x0801b5d0     0x10  lcd.o [1]
+  .rodata            const    0x0801b5e0     0x10  lcd.o [1]
+  .rodata            const    0x0801b5f0     0x10  lcd.o [1]
+  .rodata            const    0x0801b600     0x10  lcd.o [1]
+  .rodata            const    0x0801b610     0x10  lcd.o [1]
+  .rodata            const    0x0801b620     0x10  lcd.o [1]
+  .rodata            const    0x0801b630     0x10  lcd.o [1]
+  .rodata            const    0x0801b640     0x10  lcd.o [1]
+  .rodata            const    0x0801b650     0x10  lcd.o [1]
+  .rodata            const    0x0801b660     0x10  lcd.o [1]
+  .rodata            const    0x0801b670     0x10  lcd.o [1]
+  .rodata            const    0x0801b680     0x10  lcd.o [1]
+  .rodata            const    0x0801b690     0x10  lcd.o [1]
+  .rodata            const    0x0801b6a0     0x10  lcd.o [1]
+  .rodata            const    0x0801b6b0     0x10  lcd.o [1]
+  .rodata            const    0x0801b6c0     0x10  lcd.o [1]
+  .rodata            const    0x0801b6d0     0x10  lcd.o [1]
+  .rodata            const    0x0801b6e0     0x10  lcd.o [1]
+  .rodata            const    0x0801b6f0     0x10  lcd.o [1]
+  .rodata            const    0x0801b700     0x10  lcd.o [1]
+  .rodata            const    0x0801b710     0x10  lcd.o [1]
+  .rodata            const    0x0801b720     0x10  lcd.o [1]
+  .rodata            const    0x0801b730     0x10  lcd.o [1]
+  .rodata            const    0x0801b740     0x10  lcd.o [1]
+  .rodata            const    0x0801b750     0x10  lcd.o [1]
+  .rodata            const    0x0801b760     0x10  lcd.o [1]
+  .rodata            const    0x0801b770     0x10  lcd.o [1]
+  .rodata            const    0x0801b780     0x10  lcd.o [1]
+  .rodata            const    0x0801b790     0x10  lcd.o [1]
+  .rodata            const    0x0801b7a0     0x10  lcd.o [1]
+  .rodata            const    0x0801b7b0     0x10  lcd.o [1]
+  .rodata            const    0x0801b7c0     0x10  lcd.o [1]
+  .rodata            const    0x0801b7d0     0x10  lcd.o [1]
+  .rodata            const    0x0801b7e0     0x10  lcd.o [1]
+  .rodata            const    0x0801b7f0     0x10  lcd.o [1]
+  .rodata            const    0x0801b800     0x10  lcd.o [1]
+  .rodata            const    0x0801b810     0x10  lcd.o [1]
+  .rodata            const    0x0801b820     0x10  lcd.o [1]
+  .rodata            const    0x0801b830     0x10  lcd.o [1]
+  .rodata            const    0x0801b840     0x10  lcd.o [1]
+  .rodata            const    0x0801b850     0x10  lcd.o [1]
+  .rodata            const    0x0801b860     0x10  lcd.o [1]
+  .rodata            const    0x0801b870     0x10  lcd.o [1]
+  .rodata            const    0x0801b880     0x10  lcd.o [1]
+  .rodata            const    0x0801b890     0x10  lcd.o [1]
+  .rodata            const    0x0801b8a0     0x10  lcd.o [1]
+  .rodata            const    0x0801b8b0     0x10  lcd.o [1]
+  .rodata            const    0x0801b8c0     0x10  M201IRC.o [1]
+  .text              ro code  0x0801b8d0     0x10  startup_stm32f10x_hd.o [1]
+  .rodata            const    0x0801b8e0      0xc  MC20P38IRC.o [1]
+  .text              ro code  0x0801b8ec      0xc  cstartup_M.o [4]
+  .rodata            const    0x0801b8f8      0x8  M201IRC.o [1]
+  .rodata            const    0x0801b900      0x8  MC20P38IRC.o [1]
+  .rodata            const    0x0801b908      0x8  MC20P38IRC.o [1]
+  .rodata            const    0x0801b910      0x8  USB_Rx_Tx.o [1]
+  .rodata            const    0x0801b918      0x8  USB_Rx_Tx.o [1]
+  .rodata            const    0x0801b920      0x8  USB_Rx_Tx.o [1]
+  .rodata            const    0x0801b928      0x8  USB_Rx_Tx.o [1]
+  .rodata            const    0x0801b930      0x8  USB_Rx_Tx.o [1]
+  .rodata            const    0x0801b938      0x8  USB_Rx_Tx.o [1]
+  .rodata            const    0x0801b940      0x8  USB_Rx_Tx.o [1]
+  .rodata            const    0x0801b948      0x8  USB_Rx_Tx.o [1]
+  .rodata            const    0x0801b950      0x4  M201IRC.o [1]
+  .rodata            const    0x0801b954      0x4  MC20P38IRC.o [1]
+  .rodata            const    0x0801b958      0x4  MC20P38IRC.o [1]
+  .rodata            const    0x0801b95c      0x4  usb_desc.o [1]
+  .text              ro code  0x0801b960      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b964      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b968      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b96c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b970      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b974      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b978      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b97c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b980      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b984      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b988      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b98c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b990      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b994      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b998      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b99c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9a0      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9a4      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9a8      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9ac      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9b0      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9b4      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9b8      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9bc      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9c0      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9c4      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9c8      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9cc      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9d0      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9d4      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9d8      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9dc      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9e0      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9e4      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9e8      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9ec      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9f0      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9f4      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9f8      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801b9fc      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba00      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba04      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba08      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba0c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba10      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba14      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba18      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba1c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba20      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba24      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba28      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba2c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba30      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba34      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba38      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba3c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba40      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba44      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba48      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba4c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba50      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba54      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba58      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba5c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba60      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba64      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba68      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba6c      0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code  0x0801ba70      0x4  startup_stm32f10x_hd.o [1]
+  .rodata            const    0x0801ba74      0x0  zero_init3.o [4]
+  .rodata            const    0x0801ba74      0x0  lz77_init.o [4]
+  Initializer bytes  ro data  0x0801ba74    0x196  <for P2 s0>
+                            - 0x0801bc0a  0x1bada
+
+"P2", part 1 of 3:                          0x2dc
+  P2 s0                       0x20000000    0x2da  <Init block>
+    .data            inited   0x20000000    0x12c  lcd.o [1]
+    .data            inited   0x2000012c     0x54  Config.o [1]
+    .data            inited   0x20000180     0x40  lcd.o [1]
+    .data            inited   0x200001c0     0x34  Config.o [1]
+    .data            inited   0x200001f4     0x30  usb_prop.o [1]
+    .data            inited   0x20000224     0x24  usb_prop.o [1]
+    .data            inited   0x20000248     0x20  usb_prop.o [1]
+    .data            inited   0x20000268     0x1c  usb_desc.o [1]
+    .data            inited   0x20000284     0x1c  usb_istr.o [1]
+    .data            inited   0x200002a0     0x1c  usb_istr.o [1]
+    .data            inited   0x200002bc      0x8  usb_prop.o [1]
+    .data            inited   0x200002c4      0x8  usb_prop.o [1]
+    .data            inited   0x200002cc      0x8  usb_prop.o [1]
+    .data            inited   0x200002d4      0x4  usb_prop.o [1]
+    .data            inited   0x200002d8      0x1  global.o [1]
+    .data            inited   0x200002d9      0x1  global.o [1]
+                            - 0x200002da    0x2da
+
+"P2", part 2 of 3:                          0x9d4
+  .bss               zero     0x200002dc    0x800  hw_config.o [1]
+  .bss               zero     0x20000adc     0xc8  global.o [1]
+  .bss               zero     0x20000ba4     0x40  global.o [1]
+  .bss               zero     0x20000be4     0x40  global.o [1]
+  .bss               zero     0x20000c24     0x20  global.o [1]
+  .bss               zero     0x20000c44     0x1c  usb_init.o [1]
+  .bss               zero     0x20000c60      0x4  global.o [1]
+  .bss               zero     0x20000c64      0x4  hw_config.o [1]
+  .bss               zero     0x20000c68      0x4  hw_config.o [1]
+  .bss               zero     0x20000c6c      0x4  hw_config.o [1]
+  .bss               zero     0x20000c70      0x4  usb_core.o [1]
+  .bss               zero     0x20000c74      0x4  usb_endp.o [1]
+  .bss               zero     0x20000c78      0x4  usb_init.o [1]
+  .bss               zero     0x20000c7c      0x4  usb_init.o [1]
+  .bss               zero     0x20000c80      0x4  usb_init.o [1]
+  .bss               zero     0x20000c84      0x4  usb_pwr.o [1]
+  .bss               zero     0x20000c88      0x2  global.o [1]
+  .bss               zero     0x20000c8a      0x2  global.o [1]
+  .bss               zero     0x20000c8c      0x2  global.o [1]
+  .bss               zero     0x20000c8e      0x2  global.o [1]
+  .bss               zero     0x20000c90      0x2  global.o [1]
+  .bss               zero     0x20000c92      0x2  global.o [1]
+  .bss               zero     0x20000c94      0x2  global.o [1]
+  .bss               zero     0x20000c96      0x2  usb_init.o [1]
+  .bss               zero     0x20000c98      0x2  usb_int.o [1]
+  .bss               zero     0x20000c9a      0x2  usb_int.o [1]
+  .bss               zero     0x20000c9c      0x2  usb_istr.o [1]
+  .bss               zero     0x20000c9e      0x1  global.o [1]
+  .bss               zero     0x20000c9f      0x1  global.o [1]
+  .bss               zero     0x20000ca0      0x1  global.o [1]
+  .bss               zero     0x20000ca1      0x1  global.o [1]
+  .bss               zero     0x20000ca2      0x1  global.o [1]
+  .bss               zero     0x20000ca3      0x1  global.o [1]
+  .bss               zero     0x20000ca4      0x1  global.o [1]
+  .bss               zero     0x20000ca5      0x1  global.o [1]
+  .bss               zero     0x20000ca6      0x1  global.o [1]
+  .bss               zero     0x20000ca7      0x1  global.o [1]
+  .bss               zero     0x20000ca8      0x1  global.o [1]
+  .bss               zero     0x20000ca9      0x1  global.o [1]
+  .bss               zero     0x20000caa      0x1  hw_config.o [1]
+  .bss               zero     0x20000cab      0x1  spi.o [1]
+  .bss               zero     0x20000cac      0x1  usb_core.o [1]
+  .bss               zero     0x20000cad      0x1  usb_init.o [1]
+  .bss               zero     0x20000cae      0x1  usb_istr.o [1]
+  .bss               zero     0x20000caf      0x1  usb_prop.o [1]
+                            - 0x20000cb0    0x9d4
+
+"P2", part 3 of 3:                          0x400
+  CSTACK                      0x20000cb0    0x400  <Block>
+    CSTACK           uninit   0x20000cb0    0x400  <Block tail>
+                            - 0x200010b0    0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x9d4:
+          0x200002dc  0x9d4
+
+Copy/lz77 (__iar_lz77_init3)
+    1 source range, total size 0x196 (55% of destination):
+          0x0801ba74  0x196
+    1 destination range, total size 0x2da:
+          0x20000000  0x2da
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\STM3210E-EVAL\Obj: [1]
+    ADC.o                       328
+    Config.o                              76      136
+    IRC.o                       448
+    M201IRC.o                 2 044       60
+    MC20P02BPro.o             2 516
+    MC20P38IRC.o              2 228      140
+    MC20P38Pro.o              1 292
+    MC224BPro.o               1 284
+    MC301Pro.o                4 292
+    MC30P6060.o               6 520
+    MC32P21Pro.o             19 876
+    MC32P5222Pro.o            8 684
+    MC32P7011.o               3 916
+    MC32P7022.o               2 568
+    MC32P7311.o               1 212
+    MC32T8132.o               6 256
+    MC33P116Pro.o            13 088
+    MC9033.o                  4 500
+    OTPRW.o                   3 108
+    OTPRW_8K.o                3 072
+    USB_Rx_Tx.o               3 800       64
+    global.o                  1 308        2      392
+    hw_config.o                 384             2 061
+    lcd.o                     4 904    1 450      364
+    main.o                    1 268
+    misc.o                      136
+    power.o                     412
+    spi.o                     1 380                 1
+    startup_stm32f10x_hd.o      596
+    stm32f10x_adc.o             478
+    stm32f10x_gpio.o            500
+    stm32f10x_it.o               26
+    stm32f10x_rcc.o             112
+    stm32f10x_spi.o             124
+    stm32f10x_tim.o             548
+    system_stm32f10x.o          344
+    test.o                      836
+    usb_core.o                3 246                 5
+    usb_desc.o                           200       28
+    usb_endp.o                   72                 4
+    usb_init.o                   64                43
+    usb_int.o                   592                 4
+    usb_istr.o                  116       31       59
+    usb_mem.o                   110
+    usb_prop.o                  624       79      145
+    usb_pwr.o                    72                 4
+    usb_regs.o                  718
+    usb_sil.o                    84
+    wx_i2c.o                    814
+    -------------------------------------------------
+    Total:                  110 900    2 102    3 246
+
+command line: [2]
+    -------------------------------------------------
+    Total:
+
+dl7M_tln.a: [3]
+    abort.o                       6
+    exit.o                        4
+    low_level_init.o              4
+    -------------------------------------------------
+    Total:                       14
+
+rt7M_tl.a: [4]
+    cexit.o                      10
+    cmain.o                      26
+    cstartup_M.o                 12
+    data_init.o                  40
+    lz77_init.o                 460
+    zero_init3.o                 34
+    -------------------------------------------------
+    Total:                      582
+
+shb_l.a: [5]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         10        2
+    Linker created                        44    1 024
+-----------------------------------------------------
+    Grand Total:            111 526    2 148    4 270
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+?main                   0x0801b449          Code  Gb  cmain.o [4]
+ADC_Cmd                 0x08014279    0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_Config              0x080140e1    0xa4  Code  Gb  ADC.o [1]
+ADC_GetCalibrationStatus
+                        0x080142bf    0x18  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetConversionValue  0x080143df     0x6  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetFlagStatus       0x080143ed    0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_GetResetCalibrationStatus
+                        0x0801429d    0x18  Code  Gb  stm32f10x_adc.o [1]
+ADC_Init                0x08014229    0x50  Code  Gb  stm32f10x_adc.o [1]
+ADC_RegularChannelConfig
+                        0x080142f1    0xee  Code  Gb  stm32f10x_adc.o [1]
+ADC_ResetCalibration    0x08014293     0xa  Code  Gb  stm32f10x_adc.o [1]
+ADC_SoftwareStartConvCmd
+                        0x080142d7    0x1a  Code  Gb  stm32f10x_adc.o [1]
+ADC_StartCalibration    0x080142b5     0xa  Code  Gb  stm32f10x_adc.o [1]
+BlankOk                 0x0801b918     0x8  Data  Gb  USB_Rx_Tx.o [1]
+BusFault_Handler        0x0801b433     0x2  Code  Gb  stm32f10x_it.o [1]
+ByteSwap                0x08016dbd    0x16  Code  Gb  usb_regs.o [1]
+CSTACK$$Base            0x20000cb0           --   Gb  - Linker created -
+CSTACK$$Limit           0x200010b0           --   Gb  - Linker created -
+CTR_LP                  0x0801ad11   0x22e  Code  Gb  usb_int.o [1]
+CalculateCheckSum       0x0800f38b   0x126  Code  Gb  spi.o [1]
+ChangeTempIRC           0x08004ff1    0xf8  Code  Gb  MC30P6060.o [1]
+CheckRom                0x0800f557   0x1b8  Code  Gb  MC9033.o [1]
+ClearDTOG_RX            0x08016c41    0x32  Code  Gb  usb_regs.o [1]
+ClearDTOG_TX            0x08016c73    0x32  Code  Gb  usb_regs.o [1]
+Clear_Status_Out        0x08016c1b    0x26  Code  Gb  usb_regs.o [1]
+ConfigTIM4              0x0800e92b    0xdc  Code  Gb  IRC.o [1]
+ConfigTimer             0x0800e8a5    0x86  Code  Gb  IRC.o [1]
+Config_Descriptor       0x200002cc     0x8  Data  Gb  usb_prop.o [1]
+CountCRC                0x0800c329    0x58  Code  Gb  MC32P5222Pro.o [1]
+DataStageIn             0x080173cb    0xca  Code  Lc  usb_core.o [1]
+DataStageOut            0x0801730b    0xc0  Code  Lc  usb_core.o [1]
+Data_Mul_MaxPacketSize  0x20000cac     0x1  Data  Gb  usb_core.o [1]
+Data_Setup0             0x080175f9   0x2d6  Code  Lc  usb_core.o [1]
+DebugMon_Handler        0x0801b439     0x2  Code  Gb  stm32f10x_it.o [1]
+Delay_100us             0x0800ec39    0x22  Code  Gb  global.o [1]
+Delay_10us              0x0800ec5b    0x20  Code  Gb  global.o [1]
+Delay_1ms               0x0800ec9b    0x22  Code  Gb  global.o [1]
+Delay_1us               0x0800ec7b    0x20  Code  Gb  global.o [1]
+DeviceConfig            0x0800ecbd   0x286  Code  Gb  global.o [1]
+DeviceConfig_xx         0x200001c0    0x34  Data  Gb  Config.o [1]
+Device_Descriptor       0x200002c4     0x8  Data  Gb  usb_prop.o [1]
+Device_Info             0x20000c44    0x1c  Data  Gb  usb_init.o [1]
+Device_Property         0x200001f4    0x30  Data  Gb  usb_prop.o [1]
+Device_Table            0x200002d4     0x4  Data  Gb  usb_prop.o [1]
+EP1_IN_Callback         0x0801b1bd     0x2  Code  Gb  usb_endp.o [1]
+EP3_OUT_Callback        0x0801b1bf    0x12  Code  Gb  usb_endp.o [1]
+EPindex                 0x20000cad     0x1  Data  Gb  usb_init.o [1]
+ERORR_VALUE             0x20000ca5     0x1  Data  Gb  global.o [1]
+EraseFlash              0x0801b938     0x8  Data  Gb  USB_Rx_Tx.o [1]
+ErrorsCS                0x0801b948     0x8  Data  Gb  USB_Rx_Tx.o [1]
+FMChipErase             0x0800f205    0x66  Code  Gb  spi.o [1]
+FMReadID                0x0800f2e9    0x66  Code  Gb  spi.o [1]
+FMReadMore              0x0800f34f    0x3c  Code  Gb  spi.o [1]
+FMReadOne               0x0800f1b5    0x50  Code  Gb  spi.o [1]
+FMReadStatus            0x0800f26b    0x30  Code  Gb  spi.o [1]
+FMWriteOne              0x0800f149    0x6c  Code  Gb  spi.o [1]
+FMWriteStatus           0x0800f29b    0x4e  Code  Gb  spi.o [1]
+Freq                    0x0800eb79    0xc0  Code  Gb  global.o [1]
+GPIO_Configuration      0x0800ea9b    0xde  Code  Gb  global.o [1]
+GPIO_Init               0x0800e515   0x136  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_PinRemapConfig     0x0800e677    0x88  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ReadInputData      0x0800e665     0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ReadInputDataBit   0x0800e64b    0x1a  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits          0x0800e671     0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits            0x0800e66b     0x6  Code  Gb  stm32f10x_gpio.o [1]
+GetCheckSum             0x0800c381    0x64  Code  Gb  MC32P5222Pro.o [1]
+GetEPRxAddr             0x08016d07    0x1a  Code  Gb  usb_regs.o [1]
+GetEPRxCount            0x08016d8b    0x18  Code  Gb  usb_regs.o [1]
+GetEPTxAddr             0x08016ced    0x1a  Code  Gb  usb_regs.o [1]
+GetEPTxStatus           0x08016bab    0x10  Code  Gb  usb_regs.o [1]
+Handle_USBAsynchXfer    0x0801a85d    0xc6  Code  Gb  hw_config.o [1]
+HardFault_Handler       0x0801b42f     0x2  Code  Gb  stm32f10x_it.o [1]
+IIC_Read                0x08013fff    0x44  Code  Gb  wx_i2c.o [1]
+IIC_Readbyte            0x08013f55    0x58  Code  Gb  wx_i2c.o [1]
+IIC_Send_noack          0x08013ed3    0x22  Code  Gb  wx_i2c.o [1]
+IIC_Start               0x08013e4f    0x30  Code  Gb  wx_i2c.o [1]
+IIC_Stop                0x08013e7f    0x22  Code  Gb  wx_i2c.o [1]
+IIC_Wait_ack            0x08013ea1    0x32  Code  Gb  wx_i2c.o [1]
+IIC_Write               0x08013fc1    0x3e  Code  Gb  wx_i2c.o [1]
+IIC_Writebyte           0x08013ef5    0x60  Code  Gb  wx_i2c.o [1]
+IRCInitial              0x0800ea07    0x44  Code  Gb  IRC.o [1]
+IRC_MODEL               0x20000ca3     0x1  Data  Gb  global.o [1]
+IRC_VALUE               0x20000c88     0x2  Data  Gb  global.o [1]
+In0_Process             0x08017965    0x68  Code  Gb  usb_core.o [1]
+InStream_Read           0x0801af61    0x22  Code  Lc  lz77_init.o [4]
+Initial_Lcd             0x08013919    0xe0  Code  Gb  lcd.o [1]
+InputData               0x080024ff    0x76  Code  Gb  MC32P21Pro.o [1]
+M106_Addr0              0x0801b248    0x38  Data  Gb  MC20P38IRC.o [1]
+M106_Addr1              0x0801b908     0x8  Data  Gb  MC20P38IRC.o [1]
+M106_Data0              0x0801b410    0x1c  Data  Gb  MC20P38IRC.o [1]
+M106_Data1              0x0801b958     0x4  Data  Gb  MC20P38IRC.o [1]
+M201FTSendData          0x08019133   0x36a  Code  Gb  M201IRC.o [1]
+M201FTest               0x0801949d    0xac  Code  Gb  M201IRC.o [1]
+M201IRC                 0x08018d79    0xda  Code  Gb  M201IRC.o [1]
+M201OPRATION            0x08018e53   0x2e0  Code  Gb  M201IRC.o [1]
+M201_Addr0              0x0801b3f0    0x20  Data  Gb  M201IRC.o [1]
+M201_Addr1              0x0801b8f8     0x8  Data  Gb  M201IRC.o [1]
+M201_Data0              0x0801b8c0    0x10  Data  Gb  M201IRC.o [1]
+M201_Data1              0x0801b950     0x4  Data  Gb  M201IRC.o [1]
+M238FTSendData          0x080188e7   0x390  Code  Gb  MC20P38IRC.o [1]
+M238FTest               0x08018c77    0xbc  Code  Gb  MC20P38IRC.o [1]
+M238IRC                 0x080184c5   0x136  Code  Gb  MC20P38IRC.o [1]
+M238OPRATION            0x080185fb   0x2ec  Code  Gb  MC20P38IRC.o [1]
+M238_Addr0              0x0801b478    0x14  Data  Gb  MC20P38IRC.o [1]
+M238_Addr1              0x0801b900     0x8  Data  Gb  MC20P38IRC.o [1]
+M238_Data0              0x0801b8e0     0xc  Data  Gb  MC20P38IRC.o [1]
+M238_Data1              0x0801b954     0x4  Data  Gb  MC20P38IRC.o [1]
+M31P11IRC_11Bit         0x08009747   0x410  Code  Gb  MC33P116Pro.o [1]
+M31P11IRC_11Bit_Check   0x08009b57   0x114  Code  Gb  MC33P116Pro.o [1]
+M31P11IRC_11Bit_ModeInCheck
+                        0x08009c81   0x13e  Code  Gb  MC33P116Pro.o [1]
+M321IRC                 0x08002c65   0x2ba  Code  Gb  MC32P21Pro.o [1]
+M321IRC_11Bit           0x08004861   0x38a  Code  Gb  MC32P21Pro.o [1]
+M321IRC_11Bit_last      0x08004bf1    0xfa  Code  Gb  MC32P21Pro.o [1]
+M33P116IRC_11Bit        0x08009265   0x4e2  Code  Gb  MC33P116Pro.o [1]
+M9029FTtest             0x08003ea9    0xf6  Code  Gb  MC32P21Pro.o [1]
+M9029IRC                0x080039c1   0x3ac  Code  Gb  MC32P21Pro.o [1]
+M9029IRC_last           0x08003d89   0x120  Code  Gb  MC32P21Pro.o [1]
+M9033IRC                0x0800fe93   0x244  Code  Gb  MC9033.o [1]
+M9033IRC_Check          0x080100d7    0x70  Code  Gb  MC9033.o [1]
+M9033IRC_ModeInCheck    0x0801014d    0xbc  Code  Gb  MC9033.o [1]
+MC20P02B_Program        0x08017af1   0x9d4  Code  Gb  MC20P02BPro.o [1]
+MC20P38_Program         0x08019575   0x50c  Code  Gb  MC20P38Pro.o [1]
+MC224B_Program          0x08019a81   0x504  Code  Gb  MC224BPro.o [1]
+MC301_Instruct          0x080112c5    0x72  Code  Gb  MC301Pro.o [1]
+MC301_Program           0x08010679   0xc4c  Code  Gb  MC301Pro.o [1]
+MC301_R                 0x08011337    0xde  Code  Gb  MC301Pro.o [1]
+MC301_ReadByte          0x0801163d    0xf8  Code  Gb  MC301Pro.o [1]
+MC301_W                 0x08011421    0xe2  Code  Gb  MC301Pro.o [1]
+MC301_WriteByte         0x08011525   0x110  Code  Gb  MC301Pro.o [1]
+MC3081IRC               0x08003015   0x988  Code  Gb  MC32P21Pro.o [1]
+MC30P6060FTtest_8Bit    0x08004ed5   0x11c  Code  Gb  MC30P6060.o [1]
+MC30P6060IRC_8Bit       0x080050e9   0x2d8  Code  Gb  MC30P6060.o [1]
+MC30P6060IRC_8Bit_last  0x080053c1   0x216  Code  Gb  MC30P6060.o [1]
+MC30P6060_MODEL_IN      0x080061c9   0x64e  Code  Gb  MC30P6060.o [1]
+MC30P6060_Program       0x0800560d   0xb90  Code  Gb  MC30P6060.o [1]
+MC31P11FTtest_11Bit     0x080045a1   0x136  Code  Gb  MC32P21Pro.o [1]
+MC321FTtest             0x08002f1f    0xf2  Code  Gb  MC32P21Pro.o [1]
+MC321FTtest_11Bit       0x08004d01    0xd8  Code  Gb  MC32P21Pro.o [1]
+MC321_IRC_INST          0x08004dd9    0xc8  Code  Gb  MC32P21Pro.o [1]
+MC321_MODEL_IN          0x08002155   0x28e  Code  Gb  MC32P21Pro.o [1]
+MC321_PreRead           0x080023e3    0xa6  Code  Gb  MC32P21Pro.o [1]
+MC321_R                 0x08002575    0x84  Code  Gb  MC32P21Pro.o [1]
+MC321_R_DiffMode        0x080025f9    0xaa  Code  Gb  MC32P21Pro.o [1]
+MC321_ReadByte          0x08002b51    0x78  Code  Gb  MC32P21Pro.o [1]
+MC321_ReadByte_DiffMode
+                        0x08002bc9    0x8a  Code  Gb  MC32P21Pro.o [1]
+MC321_SetRmode          0x080026a9    0xbc  Code  Gb  MC32P21Pro.o [1]
+MC321_W                 0x08002765   0x330  Code  Gb  MC32P21Pro.o [1]
+MC321_WriteByte         0x08002aa1    0xb0  Code  Gb  MC32P21Pro.o [1]
+MC32P21_Program         0x080003d1  0x1d74  Code  Gb  MC32P21Pro.o [1]
+MC32P21_Program_New     0x08000131   0x296  Code  Gb  MC32P21Pro.o [1]
+MC32P5222FT_11Bit       0x0800ca61    0xbc  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222IRC            0x0800cb1d   0x3da  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222IRC_Check      0x0800cefd    0x88  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222IRC_ModeInCheck
+                        0x0800cf95   0x210  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222_MODEL_IN      0x0800c3e5   0x33e  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222_MTPByteRead   0x0800c799    0x1e  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222_MTPByteRead_DiffMode
+                        0x0800c7b7    0x2c  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222_MTPChipErase  0x0800c9bd    0xa4  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222_MTPWriteByte  0x0800c7e3    0xb0  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222_MTPWritePage  0x0800c893   0x12a  Code  Gb  MC32P5222Pro.o [1]
+MC32P5222_Program       0x0800d1cd  0x1314  Code  Gb  MC32P5222Pro.o [1]
+MC32P5312FTtest_11Bit   0x080046e9   0x16a  Code  Gb  MC32P21Pro.o [1]
+MC32P5312IRC_11Bit      0x08003fa5   0x5fc  Code  Gb  MC32P21Pro.o [1]
+MC32P5312IRC_11Bit_ModeInCheck
+                        0x08009dd5   0x254  Code  Gb  MC33P116Pro.o [1]
+MC32P5312IRC_11Bit_check
+                        0x0800a02d   0x13a  Code  Gb  MC33P116Pro.o [1]
+MC32P7011FTtest_10Bit_z
+                        0x080083b3   0x104  Code  Gb  MC32P7011.o [1]
+MC32P7011IRC_10Bit_z    0x080085d7   0x2b2  Code  Gb  MC32P7011.o [1]
+MC32P7011_ChangeTempIRC
+                        0x080084b7   0x120  Code  Gb  MC32P7011.o [1]
+MC32P7011_MODEL_IN      0x080080bd   0x2f6  Code  Gb  MC32P7011.o [1]
+MC32P7011_Program       0x080088b9   0x716  Code  Gb  MC32P7011.o [1]
+MC32P7022FTtest_11Bit   0x08011e1d    0xf8  Code  Gb  MC32P7022.o [1]
+MC32P7022IRC_11Bit      0x08011f15   0x47e  Code  Gb  MC32P7022.o [1]
+MC32P7022IRC_11Bit_Check
+                        0x08012393   0x1a0  Code  Gb  MC32P7022.o [1]
+MC32P7022IRC_11Bit_ModeInCheck
+                        0x08012533   0x2be  Code  Gb  MC32P7022.o [1]
+MC32P7311FTtest_10Bit   0x08011961   0x106  Code  Gb  MC32P7311.o [1]
+MC32P7311IRC_10Bit      0x08011a67   0x20c  Code  Gb  MC32P7311.o [1]
+MC32P7311IRC_10Bit_Check
+                        0x08011c73    0x70  Code  Gb  MC32P7311.o [1]
+MC32P7311IRC_10Bit_ModeInCheck
+                        0x08011ce3   0x110  Code  Gb  MC32P7311.o [1]
+MC32T8132FTtest         0x08006c79    0xa2  Code  Gb  MC32T8132.o [1]
+MC32T8132IRC_8Bit       0x08006d1b   0x184  Code  Gb  MC32T8132.o [1]
+MC32T8132IRC_8Bit_Check
+                        0x08006e9f    0x82  Code  Gb  MC32T8132.o [1]
+MC32T8132IRC_8Bit_ModeInCheck
+                        0x08006f21    0xe8  Code  Gb  MC32T8132.o [1]
+MC32T8132_ERASE         0x08006b49   0x130  Code  Gb  MC32T8132.o [1]
+MC32T8132_MODEL_IN      0x0800684d   0x2fc  Code  Gb  MC32T8132.o [1]
+MC32T8132_Program       0x0800703d  0x104e  Code  Gb  MC32T8132.o [1]
+MC33P116IRC_11Bit_ModeInCheck
+                        0x08009009   0x1d0  Code  Gb  MC33P116Pro.o [1]
+MC33P116IRC_11Bit_check
+                        0x080091d9    0x8c  Code  Gb  MC33P116Pro.o [1]
+MC33P116_Program        0x0800a191  0x2170  Code  Gb  MC33P116Pro.o [1]
+MC9033FTtest            0x0800fa1f    0xf2  Code  Gb  MC9033.o [1]
+MC9033_IRC_INST         0x0800f90f   0x110  Code  Gb  MC9033.o [1]
+MC9033_Instruct         0x0800fb11    0x7c  Code  Gb  MC9033.o [1]
+MC9033_MODEL_IN         0x0800fb8d   0x306  Code  Gb  MC9033.o [1]
+MC9033_Promgram         0x08010219   0x426  Code  Gb  MC9033.o [1]
+MC9033_R_DiffMode       0x0800f865    0xaa  Code  Gb  MC9033.o [1]
+MC9033_ReadByte_DiffMode
+                        0x0800f7d3    0x92  Code  Gb  MC9033.o [1]
+MC9033_SetRmode         0x0800f70f    0xc4  Code  Gb  MC9033.o [1]
+MCP42050_ADJ            0x0800f113    0x36  Code  Gb  spi.o [1]
+MemManage_Handler       0x0801b431     0x2  Code  Gb  stm32f10x_it.o [1]
+ModelIn                 0x0801b940     0x8  Data  Gb  USB_Rx_Tx.o [1]
+ModelIn_result          0x200002d9     0x1  Data  Gb  global.o [1]
+NGcounter               0x20000c8e     0x2  Data  Gb  global.o [1]
+NMI_Handler             0x0801b42d     0x2  Code  Gb  stm32f10x_it.o [1]
+NOP_Process             0x08017aed     0x2  Code  Gb  usb_core.o [1]
+NVIC_Init               0x0801a987    0x68  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                        0x0801a97d     0xa  Code  Gb  misc.o [1]
+NextData                0x0801b920     0x8  Data  Gb  USB_Rx_Tx.o [1]
+NoData_Setup0           0x08017495   0x164  Code  Lc  usb_core.o [1]
+NomallCheck             0x0800f4e5    0x72  Code  Gb  MC9033.o [1]
+OKcounter               0x20000c60     0x4  Data  Gb  global.o [1]
+OPTION_FRT              0x20000ca0     0x1  Data  Gb  global.o [1]
+OPTION_FRT2             0x20000ca1     0x1  Data  Gb  global.o [1]
+OPTION_TEMP             0x20000c92     0x2  Data  Gb  global.o [1]
+OPTION_TEMPADJ          0x20000ca2     0x1  Data  Gb  global.o [1]
+OP_STATE                0x20000ca7     0x1  Data  Gb  global.o [1]
+OSCCAL                  0x20000c94     0x2  Data  Gb  global.o [1]
+OTP8K_Blank             0x08015e3b    0x7c  Code  Gb  OTPRW_8K.o [1]
+OTP8K_Mode_IN           0x08015c9b    0x52  Code  Gb  OTPRW_8K.o [1]
+OTP8K_Mode_s            0x080152e1   0x2d0  Code  Gb  OTPRW_8K.o [1]
+OTP8K_ReadByte          0x080155b1   0x330  Code  Gb  OTPRW_8K.o [1]
+OTP8K_Verify            0x08015ced   0x14e  Code  Gb  OTPRW_8K.o [1]
+OTP8K_WriteByte         0x080158e1   0x3ba  Code  Gb  OTPRW_8K.o [1]
+OTPInit                 0x08015ee1    0xba  Code  Gb  OTPRW.o [1]
+OTP_ADDR                0x20000c8c     0x2  Data  Gb  global.o [1]
+OTP_Blank               0x080169db    0x7c  Code  Gb  OTPRW.o [1]
+OTP_DownLoad            0x08016a57    0x8a  Code  Gb  OTPRW.o [1]
+OTP_Mode_IN             0x08016857    0x36  Code  Gb  OTPRW.o [1]
+OTP_Model_s             0x08015f9b   0x2d0  Code  Gb  OTPRW.o [1]
+OTP_ReadByte            0x0801626b   0x304  Code  Gb  OTPRW.o [1]
+OTP_ReadData            0x20000ca4     0x1  Data  Gb  global.o [1]
+OTP_Verify              0x0801688d   0x14e  Code  Gb  OTPRW.o [1]
+OTP_WriteByte           0x0801656f   0x2e8  Code  Gb  OTPRW.o [1]
+Out0_Process            0x080179cd    0x4e  Code  Gb  usb_core.o [1]
+OutStream_Write         0x0801af83    0x40  Code  Lc  lz77_init.o [4]
+PMAToUserBufferCopy     0x08016e13    0x2e  Code  Gb  usb_mem.o [1]
+POWER_OFF               0x0800e837    0x5e  Code  Gb  power.o [1]
+POWER_ON                0x0800e78f    0xa8  Code  Gb  power.o [1]
+PendSV_Handler          0x0801b43b     0x2  Code  Gb  stm32f10x_it.o [1]
+Post0_Process           0x08017a29    0x3c  Code  Gb  usb_core.o [1]
+PowerInitial            0x0800e709    0x86  Code  Gb  power.o [1]
+PowerOn                 0x0801ac75    0x3a  Code  Gb  usb_pwr.o [1]
+ProgrammingFinished     0x0801b910     0x8  Data  Gb  USB_Rx_Tx.o [1]
+RCC_ADCCLKConfig        0x0801282b    0x14  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB1PeriphClockCmd  0x0801285d    0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd  0x0801283f    0x1e  Code  Gb  stm32f10x_rcc.o [1]
+RCC_Configuration       0x0800ea65    0x36  Code  Gb  global.o [1]
+RCC_MCOConfig           0x0801287b     0x6  Code  Gb  stm32f10x_rcc.o [1]
+RCC_USBCLKConfig        0x08012825     0x6  Code  Gb  stm32f10x_rcc.o [1]
+Reconfigured            0x0801b930     0x8  Data  Gb  USB_Rx_Tx.o [1]
+Region$$Table$$Base     0x0801b304           --   Gb  - Linker created -
+Region$$Table$$Limit    0x0801b330           --   Gb  - Linker created -
+Request                 0x20000caf     0x1  Data  Gb  usb_prop.o [1]
+Reset                   0x0801b928     0x8  Data  Gb  USB_Rx_Tx.o [1]
+Rxdata                  0x20000cab     0x1  Data  Gb  spi.o [1]
+SOF_Callback            0x0801b1d1    0x24  Code  Gb  usb_endp.o [1]
+SPI2Init                0x0800ef81    0xd2  Code  Gb  spi.o [1]
+SPI_Cmd                 0x080140a5    0x1c  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_GetFlagStatus   0x080140c9    0x18  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_ReceiveData     0x080140c5     0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_SendData        0x080140c1     0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_Init                0x08014065    0x40  Code  Gb  stm32f10x_spi.o [1]
+SPI_ReadByte            0x0800f0b3    0x60  Code  Gb  spi.o [1]
+SPI_WriteByte           0x0800f053    0x60  Code  Gb  spi.o [1]
+SVC_Handler             0x0801b437     0x2  Code  Gb  stm32f10x_it.o [1]
+SaveRState              0x20000c98     0x2  Data  Gb  usb_int.o [1]
+SaveTState              0x20000c9a     0x2  Data  Gb  usb_int.o [1]
+SetAddress              0x08002489    0x76  Code  Gb  MC32P21Pro.o [1]
+SetBTABLE               0x08016b05     0xe  Code  Gb  usb_regs.o [1]
+SetDeviceAddress        0x08017a65    0x48  Code  Gb  usb_core.o [1]
+SetEPRxAddr             0x08016cc9    0x24  Code  Gb  usb_regs.o [1]
+SetEPRxCount            0x08016d3b    0x50  Code  Gb  usb_regs.o [1]
+SetEPRxStatus           0x08016b6f    0x3c  Code  Gb  usb_regs.o [1]
+SetEPRxValid            0x08016beb    0x30  Code  Gb  usb_regs.o [1]
+SetEPTxAddr             0x08016ca5    0x24  Code  Gb  usb_regs.o [1]
+SetEPTxCount            0x08016d21    0x1a  Code  Gb  usb_regs.o [1]
+SetEPTxStatus           0x08016b33    0x3c  Code  Gb  usb_regs.o [1]
+SetEPTxValid            0x08016bbb    0x30  Code  Gb  usb_regs.o [1]
+SetEPType               0x08016b13    0x20  Code  Gb  usb_regs.o [1]
+SetPTMmode              0x0800c723    0x76  Code  Gb  MC32P5222Pro.o [1]
+SetSysClock             0x080128e9     0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72         0x080128f1    0xe0  Code  Lc  system_stm32f10x.o [1]
+Set_System              0x0801a7bd    0x28  Code  Gb  hw_config.o [1]
+Set_USBClock            0x0801a7e5    0x14  Code  Gb  hw_config.o [1]
+Setup0_Process          0x080178cf    0x96  Code  Gb  usb_core.o [1]
+Standard_ClearFeature   0x08017085   0x16e  Code  Gb  usb_core.o [1]
+Standard_GetConfiguration
+                        0x08016e41    0x2c  Code  Gb  usb_core.o [1]
+Standard_GetDescriptorData
+                        0x080172df    0x2c  Code  Gb  usb_core.o [1]
+Standard_GetInterface   0x08016ebb    0x2c  Code  Gb  usb_core.o [1]
+Standard_GetStatus      0x08016f6b   0x11a  Code  Gb  usb_core.o [1]
+Standard_SetConfiguration
+                        0x08016e6d    0x4e  Code  Gb  usb_core.o [1]
+Standard_SetDeviceFeature
+                        0x080172bb    0x24  Code  Gb  usb_core.o [1]
+Standard_SetEndPointFeature
+                        0x080171f3    0xc8  Code  Gb  usb_core.o [1]
+Standard_SetInterface   0x08016ee7    0x84  Code  Gb  usb_core.o [1]
+StateFlag               0x200002d8     0x1  Data  Gb  global.o [1]
+StatusInfo              0x20000c70     0x4  Data  Gb  usb_core.o [1]
+String_Descriptor       0x20000248    0x20  Data  Gb  usb_prop.o [1]
+SysTick_Handler         0x0801b43d     0x2  Code  Gb  stm32f10x_it.o [1]
+SystemInit              0x08012895    0x54  Code  Gb  system_stm32f10x.o [1]
+TADJ                    0x20000ca8     0x1  Data  Gb  global.o [1]
+TEST_COUNT              0x20000c8a     0x2  Data  Gb  global.o [1]
+TEST_IRC                0x20000adc    0xc8  Data  Gb  global.o [1]
+TIM_ClearITPendingBit   0x0801192d     0x8  Code  Gb  stm32f10x_tim.o [1]
+TIM_Cmd                 0x08011861    0x1c  Code  Gb  stm32f10x_tim.o [1]
+TIM_CtrlPWMOutputs      0x0801187d    0x22  Code  Gb  stm32f10x_tim.o [1]
+TIM_ETRClockMode2Config
+                        0x080118b5    0x26  Code  Gb  stm32f10x_tim.o [1]
+TIM_ETRConfig           0x080118db    0x18  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetCounter          0x080118f7     0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_GetITStatus         0x080118fb    0x32  Code  Gb  stm32f10x_tim.o [1]
+TIM_ITConfig            0x0801189f    0x16  Code  Gb  stm32f10x_tim.o [1]
+TIM_OC2Init             0x080117d1    0x90  Code  Gb  stm32f10x_tim.o [1]
+TIM_SetCounter          0x080118f3     0x4  Code  Gb  stm32f10x_tim.o [1]
+TIM_TimeBaseInit        0x0801173d    0x94  Code  Gb  stm32f10x_tim.o [1]
+TestAdc                 0x08014185    0x92  Code  Gb  ADC.o [1]
+USART_Config            0x0801a859     0x4  Code  Gb  hw_config.o [1]
+USART_Config_Default    0x0801a857     0x2  Code  Gb  hw_config.o [1]
+USART_Rx_Buffer         0x200002dc   0x800  Data  Gb  hw_config.o [1]
+USART_Rx_length         0x20000c6c     0x4  Data  Gb  hw_config.o [1]
+USART_Rx_ptr_in         0x20000c64     0x4  Data  Gb  hw_config.o [1]
+USART_Rx_ptr_out        0x20000c68     0x4  Data  Gb  hw_config.o [1]
+USB_Cable_Config        0x0801a835    0x22  Code  Gb  hw_config.o [1]
+USB_Init                0x0801a93d    0x40  Code  Gb  usb_init.o [1]
+USB_Interrupts_Config   0x0801a7f9    0x3c  Code  Gb  hw_config.o [1]
+USB_Istr                0x0801b149    0x74  Code  Gb  usb_istr.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                        0x0801b43f     0x8  Code  Gb  stm32f10x_it.o [1]
+USB_RxCommand           0x20000c9f     0x1  Data  Gb  global.o [1]
+USB_RxDataCS            0x20000c90     0x2  Data  Gb  global.o [1]
+USB_Rx_Buffer           0x20000ba4    0x40  Data  Gb  global.o [1]
+USB_Rx_Flag             0x20000ca6     0x1  Data  Gb  global.o [1]
+USB_Rx_Tx               0x08014409   0xdc4  Code  Gb  USB_Rx_Tx.o [1]
+USB_SIL_Init            0x0801acbd    0x1a  Code  Gb  usb_sil.o [1]
+USB_SIL_Read            0x0801ace5    0x2c  Code  Gb  usb_sil.o [1]
+USB_SendData            0x080151e5    0x68  Code  Gb  USB_Rx_Tx.o [1]
+USB_Tx_Buffer           0x20000be4    0x40  Data  Gb  global.o [1]
+USB_Tx_State            0x20000caa     0x1  Data  Gb  hw_config.o [1]
+UsageFault_Handler      0x0801b435     0x2  Code  Gb  stm32f10x_it.o [1]
+UserToPMABufferCopy     0x08016dd3    0x40  Code  Gb  usb_mem.o [1]
+User_Standard_Requests  0x20000224    0x24  Data  Gb  usb_prop.o [1]
+Virtual_Com_Port_ConfigDescriptor
+                        0x0801b204    0x44  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_Data_Setup
+                        0x0801ab2f    0x64  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_DeviceDescriptor
+                        0x0801b48c    0x14  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_GetConfigDescriptor
+                        0x0801abcb    0x10  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_GetDeviceDescriptor
+                        0x0801abbb    0x10  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_GetLineCoding
+                        0x0801ac1d    0x18  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_GetStringDescriptor
+                        0x0801abdb    0x26  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_Get_Interface_Setting
+                        0x0801ac01    0x1a  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_NoData_Setup
+                        0x0801ab93    0x28  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_Reset  0x0801aa23    0xdc  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_SetConfiguration
+                        0x0801aaff    0x10  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_SetDeviceAddress
+                        0x0801ab0f     0x8  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_SetLineCoding
+                        0x0801ac35    0x18  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_Status_In
+                        0x0801ab17    0x16  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_Status_Out
+                        0x0801ab2d     0x2  Code  Gb  usb_prop.o [1]
+Virtual_Com_Port_StringLangID
+                        0x0801b95c     0x4  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_StringProduct
+                        0x0801b280    0x34  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_StringSerial
+                        0x20000268    0x1c  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_StringVendor
+                        0x0801b2b4    0x28  Data  Gb  usb_desc.o [1]
+Virtual_Com_Port_init   0x0801aa05    0x1e  Code  Gb  usb_prop.o [1]
+WR_Command              0x20000c9e     0x1  Data  Gb  global.o [1]
+WriteConfig_xx          0x2000012c    0x54  Data  Gb  Config.o [1]
+WriteFlag               0x20000ca9     0x1  Data  Gb  global.o [1]
+Writer_Test             0x0801a479   0x344  Code  Gb  test.o [1]
+__cmain                 0x0801b449          Code  Gb  cmain.o [4]
+__exit                  0x0801b135    0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x0801b2dd    0x28  Code  Gb  data_init.o [4]
+__iar_lz77_init3        0x0801afc3   0x16a  Code  Gb  lz77_init.o [4]
+__iar_program_start     0x0801b8ed          Code  Gb  cstartup_M.o [4]
+__iar_zero_init3        0x08014043    0x22  Code  Gb  zero_init3.o [4]
+__low_level_init        0x0801b463     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000          Data  Gb  startup_stm32f10x_hd.o [1]
+_call_main              0x0801b455          Code  Gb  cmain.o [4]
+_exit                   0x0801b46d          Code  Gb  cexit.o [4]
+_main                   0x0801b45f          Code  Gb  cmain.o [4]
+abort                   0x0801b12d     0x6  Code  Gb  abort.o [3]
+bDeviceState            0x20000c84     0x4  Data  Gb  usb_pwr.o [1]
+bIntPackSOF             0x20000cae     0x1  Data  Gb  usb_istr.o [1]
+clear_line              0x08013a55    0x3e  Code  Gb  lcd.o [1]
+clear_screen            0x08013a19    0x3c  Code  Gb  lcd.o [1]
+delay_5us               0x08013e33    0x1c  Code  Gb  wx_i2c.o [1]
+displaWrite_Check       0x0801335f    0xd6  Code  Gb  lcd.o [1]
+displayAZ               0x08013a93    0x98  Code  Gb  lcd.o [1]
+displayCHAR             0x08013b2b    0x98  Code  Gb  lcd.o [1]
+displayErorr            0x0801354b    0xe6  Code  Gb  lcd.o [1]
+displayTestMode         0x08012adf    0xe8  Code  Gb  lcd.o [1]
+displayTestState        0x08012da3    0xa6  Code  Gb  lcd.o [1]
+displayVDD_VPP          0x08012bc7   0x1dc  Code  Gb  lcd.o [1]
+display_Addr            0x0801374d   0x1a6  Code  Gb  lcd.o [1]
+display_CheckSum_Option
+                        0x08012e49   0x516  Code  Gb  lcd.o [1]
+display_OK_NG           0x08013435   0x116  Code  Gb  lcd.o [1]
+display_dynamicID       0x08013639    0xd4  Code  Gb  lcd.o [1]
+displayfuntion          0x080129ed    0xf2  Code  Gb  lcd.o [1]
+dynamic_id_add          0x08013d15   0x11e  Code  Gb  wx_i2c.o [1]
+exit                    0x0801b467     0x4  Code  Gb  exit.o [3]
+iic_data                0x20000c24    0x20  Data  Gb  global.o [1]
+lcd_0                   0x0801b800    0x10  Data  Gb  lcd.o [1]
+lcd_1                   0x0801b810    0x10  Data  Gb  lcd.o [1]
+lcd_2                   0x0801b820    0x10  Data  Gb  lcd.o [1]
+lcd_3                   0x0801b830    0x10  Data  Gb  lcd.o [1]
+lcd_4                   0x0801b840    0x10  Data  Gb  lcd.o [1]
+lcd_5                   0x0801b850    0x10  Data  Gb  lcd.o [1]
+lcd_6                   0x0801b860    0x10  Data  Gb  lcd.o [1]
+lcd_7                   0x0801b870    0x10  Data  Gb  lcd.o [1]
+lcd_8                   0x0801b880    0x10  Data  Gb  lcd.o [1]
+lcd_9                   0x0801b890    0x10  Data  Gb  lcd.o [1]
+lcd_A                   0x0801b660    0x10  Data  Gb  lcd.o [1]
+lcd_B                   0x0801b670    0x10  Data  Gb  lcd.o [1]
+lcd_C                   0x0801b680    0x10  Data  Gb  lcd.o [1]
+lcd_D                   0x0801b690    0x10  Data  Gb  lcd.o [1]
+lcd_E                   0x0801b6a0    0x10  Data  Gb  lcd.o [1]
+lcd_F                   0x0801b6b0    0x10  Data  Gb  lcd.o [1]
+lcd_G                   0x0801b6c0    0x10  Data  Gb  lcd.o [1]
+lcd_H1                  0x0801b6d0    0x10  Data  Gb  lcd.o [1]
+lcd_I                   0x0801b6e0    0x10  Data  Gb  lcd.o [1]
+lcd_J                   0x0801b6f0    0x10  Data  Gb  lcd.o [1]
+lcd_K                   0x0801b700    0x10  Data  Gb  lcd.o [1]
+lcd_L                   0x0801b710    0x10  Data  Gb  lcd.o [1]
+lcd_M                   0x0801b720    0x10  Data  Gb  lcd.o [1]
+lcd_N                   0x0801b730    0x10  Data  Gb  lcd.o [1]
+lcd_O                   0x0801b740    0x10  Data  Gb  lcd.o [1]
+lcd_P                   0x0801b750    0x10  Data  Gb  lcd.o [1]
+lcd_Q                   0x0801b760    0x10  Data  Gb  lcd.o [1]
+lcd_R                   0x0801b770    0x10  Data  Gb  lcd.o [1]
+lcd_S                   0x0801b780    0x10  Data  Gb  lcd.o [1]
+lcd_T                   0x0801b790    0x10  Data  Gb  lcd.o [1]
+lcd_U                   0x0801b7a0    0x10  Data  Gb  lcd.o [1]
+lcd_V                   0x0801b7b0    0x10  Data  Gb  lcd.o [1]
+lcd_W                   0x0801b7c0    0x10  Data  Gb  lcd.o [1]
+lcd_X                   0x0801b7d0    0x10  Data  Gb  lcd.o [1]
+lcd_Y                   0x0801b7e0    0x10  Data  Gb  lcd.o [1]
+lcd_Z                   0x0801b7f0    0x10  Data  Gb  lcd.o [1]
+lcd_a                   0x0801b4a0    0x10  Data  Gb  lcd.o [1]
+lcd_b                   0x0801b4b0    0x10  Data  Gb  lcd.o [1]
+lcd_blank               0x0801b8b0    0x10  Data  Gb  lcd.o [1]
+lcd_c                   0x0801b4c0    0x10  Data  Gb  lcd.o [1]
+lcd_cuo                 0x0801b370    0x20  Data  Gb  lcd.o [1]
+lcd_d                   0x0801b4d0    0x10  Data  Gb  lcd.o [1]
+lcd_dai                 0x0801b3b0    0x20  Data  Gb  lcd.o [1]
+lcd_e                   0x0801b4e0    0x10  Data  Gb  lcd.o [1]
+lcd_f                   0x0801b4f0    0x10  Data  Gb  lcd.o [1]
+lcd_g                   0x0801b500    0x10  Data  Gb  lcd.o [1]
+lcd_h1                  0x0801b510    0x10  Data  Gb  lcd.o [1]
+lcd_hao                 0x0801b350    0x20  Data  Gb  lcd.o [1]
+lcd_henggan             0x0801b650    0x10  Data  Gb  lcd.o [1]
+lcd_i                   0x0801b520    0x10  Data  Gb  lcd.o [1]
+lcd_j                   0x0801b530    0x10  Data  Gb  lcd.o [1]
+lcd_k                   0x0801b540    0x10  Data  Gb  lcd.o [1]
+lcd_l                   0x0801b550    0x10  Data  Gb  lcd.o [1]
+lcd_m                   0x0801b560    0x10  Data  Gb  lcd.o [1]
+lcd_ma                  0x0801b3d0    0x20  Data  Gb  lcd.o [1]
+lcd_maohao              0x0801b640    0x10  Data  Gb  lcd.o [1]
+lcd_n                   0x0801b570    0x10  Data  Gb  lcd.o [1]
+lcd_o                   0x0801b580    0x10  Data  Gb  lcd.o [1]
+lcd_p                   0x0801b590    0x10  Data  Gb  lcd.o [1]
+lcd_point               0x0801b8a0    0x10  Data  Gb  lcd.o [1]
+lcd_q                   0x0801b5a0    0x10  Data  Gb  lcd.o [1]
+lcd_r                   0x0801b5b0    0x10  Data  Gb  lcd.o [1]
+lcd_s                   0x0801b5c0    0x10  Data  Gb  lcd.o [1]
+lcd_t                   0x0801b5d0    0x10  Data  Gb  lcd.o [1]
+lcd_u                   0x0801b5e0    0x10  Data  Gb  lcd.o [1]
+lcd_v                   0x0801b5f0    0x10  Data  Gb  lcd.o [1]
+lcd_w                   0x0801b600    0x10  Data  Gb  lcd.o [1]
+lcd_wu                  0x0801b390    0x20  Data  Gb  lcd.o [1]
+lcd_x                   0x0801b610    0x10  Data  Gb  lcd.o [1]
+lcd_xing                0x0801b330    0x20  Data  Gb  lcd.o [1]
+lcd_y                   0x0801b620    0x10  Data  Gb  lcd.o [1]
+lcd_z                   0x0801b630    0x10  Data  Gb  lcd.o [1]
+linecoding              0x200002bc     0x8  Data  Gb  usb_prop.o [1]
+main                    0x08019f85   0x4f4  Code  Gb  main.o [1]
+pEpInt_IN               0x20000284    0x1c  Data  Gb  usb_istr.o [1]
+pEpInt_OUT              0x200002a0    0x1c  Data  Gb  usb_istr.o [1]
+pInformation            0x20000c78     0x4  Data  Gb  usb_init.o [1]
+pNum                    0x20000180    0x40  Data  Gb  lcd.o [1]
+pProperty               0x20000c7c     0x4  Data  Gb  usb_init.o [1]
+pUser_Standard_Requests
+                        0x20000c80     0x4  Data  Gb  usb_init.o [1]
+pp                      0x20000000   0x12c  Data  Gb  lcd.o [1]
+transfer_command        0x08013bc3    0x70  Code  Gb  lcd.o [1]
+transfer_data           0x08013c3d    0x64  Code  Gb  lcd.o [1]
+wInterrupt_Mask         0x20000c96     0x2  Data  Gb  usb_init.o [1]
+wIstr                   0x20000c9c     0x2  Data  Gb  usb_istr.o [1]
+
+
+[1] = E:\SVN\APP\Firmware\ÉÕÂ¼¹¤¾ß°æ±¾¿â\EZPro100\EZPro100_v2.96\EZPro100_v2.96_20160617_p\Project\EZPro100_v20\EWARM\STM3210E-EVAL\Obj
+[2] = command line
+[3] = dl7M_tln.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  111 526 bytes of readonly  code memory
+    2 148 bytes of readonly  data memory
+    4 270 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

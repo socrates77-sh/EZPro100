@@ -1,0 +1,271 @@
+[DebugChecksum]
+Checksum=1210091206
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[InstructionProfiling]
+Enabled=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[BreakpointUsageDialog]
+Placement=_ 461 220 906 502
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=1
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\src\MC32P21Pro.c}.99.2@1" 1 0 0 0 "" 0 ""
+Bp1=_ "STD_CODE" "{$PROJ_DIR$\..\src\MC32P21Pro.c}.1929.3@1" 1 0 0 0 "" 0 ""
+Count=2
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[TraceHelper]
+Enabled=0
+ShowSource=1
+[struct_types]
+Fmt0=DEVICE_CONFIG-BlankCode	4	0
+Fmt1=DEVICE_CONFIG-IRC_FrMax	4	0
+Fmt2=DEVICE_CONFIG-IRC_FrMin	4	0
+Fmt3=DEVICE_CONFIG-IRC_FrType	4	0
+Fmt4=DEVICE_CONFIG-IRC_OPTION	4	0
+Fmt5=DEVICE_CONFIG-IrcVDD	3	0
+Fmt6=DEVICE_CONFIG-MCU_ID	4	0
+Fmt7=DEVICE_CONFIG-OptionAddr	4	0
+Fmt8=DEVICE_CONFIG-ProTime	4	0
+Fmt9=DEVICE_CONFIG-ProVPP	4	0
+Fmt10=DEVICE_CONFIG-ProgramID	4	0
+Fmt11=DEVICE_CONFIG-RomEndAddr	4	0
+Fmt12=DEVICE_CONFIG-RomFirAddr	4	0
+Fmt13=DEVICE_CONFIG-WriteEn	4	0
+Fmt14=WRITE_CONFIG-Addr_Flash_OptionStart	4	0
+Fmt15=WRITE_CONFIG-AllCheckNeed	4	0
+Fmt16=WRITE_CONFIG-ForceWriteCnt	4	0
+Fmt17=WRITE_CONFIG-ReWriteCnt	4	0
+Fmt18=WRITE_CONFIG-ReadCnt	4	0
+Fmt19=WRITE_CONFIG-ReadOkCnt	4	0
+Fmt20=WRITE_CONFIG-RomBit	4	0
+Fmt21=WRITE_CONFIG-WriteCheckNeed	4	0
+[array_types]
+Fmt0=u16[16]	4	0
+Fmt1=u8[64]	4	0
+[watch_formats]
+Fmt0={W}0:ADDRR	4	0
+Fmt1={W}0:Addres	4	0
+Fmt2={W}0:CRC_value	4	0
+Fmt3={W}0:CheckSum	4	0
+Fmt4={W}0:CheckSum_7011	4	0
+Fmt5={W}0:CheckSum_c	4	0
+Fmt6={W}0:CheckSum_temp	4	0
+Fmt7={W}0:DeviceConfig_xx	4	4
+Fmt8={W}0:ERORR_VALUE	3	0
+Fmt9={W}0:Fdata	4	0
+Fmt10={W}0:FdataH	4	0
+Fmt11={W}0:FdataL	4	0
+Fmt12={W}0:FirstAddr	4	0
+Fmt13={W}0:ForceReCnt	4	0
+Fmt14={W}0:IRC_Empty	4	0
+Fmt15={W}0:IRC_Option	4	0
+Fmt16={W}0:IRC_VALUE	3	0
+Fmt17={W}0:OKorNG	3	0
+Fmt18={W}0:OPTION_FRT	4	0
+Fmt19={W}0:OPTION_FRT2	4	0
+Fmt20={W}0:OPTION_TEMP	4	0
+Fmt21={W}0:OPTION_TEMPADJ	4	0
+Fmt22={W}0:OPTION_TEMPADJ_1	4	0
+Fmt23={W}0:OPTION_TEMPADJ_2	4	0
+Fmt24={W}0:OSCCAL	4	0
+Fmt25={W}0:OSCCAL_temp	4	0
+Fmt26={W}0:OTPAddr	4	0
+Fmt27={W}0:OTPData	4	0
+Fmt28={W}0:OTPID	4	0
+Fmt29={W}0:OTP_ADDR	4	0
+Fmt30={W}0:OTP_ReadData	4	0
+Fmt31={W}0:OldIRC	4	0
+Fmt32={W}0:OldIRC_M301	4	0
+Fmt33={W}0:OldIRC_word2	4	0
+Fmt34={W}0:PageStaAddress	4	0
+Fmt35={W}0:ROMReadData	4	0
+Fmt36={W}0:ROMReadData_1	4	0
+Fmt37={W}0:ROMReadData_2	4	0
+Fmt38={W}0:ReCnt	4	0
+Fmt39={W}0:Read_otp_addr	4	0
+Fmt40={W}0:Retry	3	0
+Fmt41={W}0:RomEndAddr_6060	4	0
+Fmt42={W}0:Rxdata	4	0
+Fmt43={W}0:StateFlag	4	0
+Fmt44={W}0:TADJ	4	0
+Fmt45={W}0:TADJ_temp	4	0
+Fmt46={W}0:TempADJ	4	0
+Fmt47={W}0:USB_RxDataCS	4	0
+Fmt48={W}0:USB_Rx_Flag	4	0
+Fmt49={W}0:a	4	0
+Fmt50={W}0:addr0	4	0
+Fmt51={W}0:addr1	4	0
+Fmt52={W}0:address	4	0
+Fmt53={W}0:adjH	4	0
+Fmt54={W}0:adjL	4	0
+Fmt55={W}0:check_num	4	0
+Fmt56={W}0:checksum	4	0
+Fmt57={W}0:crc	4	0
+Fmt58={W}0:erase_en	4	0
+Fmt59={W}0:erase_num	4	0
+Fmt60={W}0:i	4	0
+Fmt61={W}0:id_addr0	4	0
+Fmt62={W}0:id_addr1	4	0
+Fmt63={W}0:id_end	4	0
+Fmt64={W}0:id_length	4	0
+Fmt65={W}0:irc_adj_value	4	0
+Fmt66={W}0:m301data	4	0
+Fmt67={W}0:mcu_addr	4	0
+Fmt68={W}0:mm	4	0
+Fmt69={W}0:mode	4	0
+Fmt70={W}0:op_addr	4	0
+Fmt71={W}0:opbit_H	4	0
+Fmt72={W}0:opbit_L	4	0
+Fmt73={W}0:optH	4	0
+Fmt74={W}0:optL	4	0
+Fmt75={W}0:opt_shift	3	0
+Fmt76={W}0:optf2	3	0
+Fmt77={W}0:optfa	4	0
+Fmt78={W}0:pdin	4	0
+Fmt79={W}0:read_data	4	0
+Fmt80={W}0:temp	4	0
+Fmt81={W}0:temp0_FT	3	0
+Fmt82={W}0:temp1	4	0
+Fmt83={W}0:temp1_FT	3	0
+Fmt84={W}0:temp2	4	0
+Fmt85={W}0:temp3	4	0
+Fmt86={W}0:tempadj	4	0
+Fmt87={W}0:tempcount	3	0
+Fmt88={W}0:wData	4	0
+Fmt89={W}0:wait_time	3	0
+Fmt90={W}0:ww_temp	4	0
+[Trace2]
+Enabled=0
+ShowSource=0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=3
+Graph=0
+Symbiont=0
+Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Bp0=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\src\MC32T8132.c}.864.13" 0 0 1 "" 0 "" 0
+Bp1=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\src\MC33P116Pro.c}.1332.3" 0 0 1 "" 0 "" 0
+Bp2=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\src\MC33P116Pro.c}.1989.3" 0 0 1 "" 0 "" 0
+Bp3=_ 0 "EMUL_CODE" "{$PROJ_DIR$\..\src\MC33P116Pro.c}.2087.17" 0 0 1 "" 0 "" 0
+Bp4=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\MC33P116Pro.c}.1873.3" 0 0 1 "" 0 "" 0
+Bp5=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\MC33P116Pro.c}.1058.3" 0 0 1 "" 0 "" 0
+Bp6=_ 1 "EMUL_CODE" "{$PROJ_DIR$\..\src\MC33P116Pro.c}.1490.7" 0 0 1 "" 0 "" 0
+Count=7
+[Aliases]
+A0=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_20150324_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A1=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_20150324_p\Project\EZPro100_v20\src\main.c" ""
+A2=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_2015033101_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A3=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_2015033101_p\Project\EZPro100_v20\src\main.c" ""
+A4=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_2015040201_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A5=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_2015040201_p\Project\EZPro100_v20\src\main.c" ""
+A6=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_2015040901_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A7=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_2015040901_p\Project\EZPro100_v20\src\main.c" ""
+A8=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_20150421_01_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A9=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_20150421_01_p\Project\EZPro100_v20\src\main.c" ""
+A10=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_20150428_01_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A11=_ "C:\Users\lemon\Desktop\write\EZPro100_hv2\EZpro100_hv2_20150428_01_p\Project\EZPro100_v20\src\main.c" ""
+A12=_ "D:\RollaWork\MyWork\write\EZPro100_hv2\EZPro100_hv2_20150805_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A13=_ "D:\RollaWork\MyWork\write\EZPro100_hv2\EZPro100_hv2_20150805_p\Project\EZPro100_v20\src\main.c" ""
+A14=_ "D:\RollaWork\MyWork\write\EZPro100_hv2\EZPro100_hv2_20150824_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A15=_ "D:\RollaWork\MyWork\write\EZPro100_hv2\EZPro100_hv2_20150824_p\Project\EZPro100_v20\src\main.c" ""
+A16=_ "D:\RollaWork\MyWork\write\EZPro100_hv2\EZPro100_hv2_20150826_p\Project\EZPro100_v20\src\MC224BPro.c" ""
+A17=_ "D:\RollaWork\MyWork\write\EZPro100_hv2\EZPro100_hv2_20150826_p\Project\EZPro100_v20\src\main.c" ""
+A18=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112002_8132\Project\EZPro100_v20\src\MC224BPro.c" ""
+A19=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014112002_8132\Project\EZPro100_v20\src\main.c" ""
+A20=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120402\Project\EZPro100_v20\src\MC224BPro.c" ""
+A21=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120402\Project\EZPro100_v20\src\main.c" ""
+A22=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\MC224BPro.c" ""
+A23=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2014120801\Project\EZPro100_v20\src\main.c" ""
+A24=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150114\Project\EZPro100_v20\src\MC224BPro.c" ""
+A25=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 20150114\Project\EZPro100_v20\src\main.c" ""
+A26=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011502\Project\EZPro100_v20\src\MC224BPro.c" ""
+A27=_ "D:\RollaWork\MyWork\writerProgram\testing\EZpro100 - 2015011502\Project\EZPro100_v20\src\main.c" ""
+Count=28
+SuppressDialog=0
