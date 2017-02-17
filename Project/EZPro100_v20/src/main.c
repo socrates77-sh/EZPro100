@@ -45,7 +45,7 @@
 #include "LCD.h"
 #include "wx_i2c.h"
 
-//#define SINOMCU_IAP 
+//#define SINOMCU_IAP
 /*******************************************************************************
 * Function Name  : main. Writer only
 * Description    : Main routine.
@@ -55,207 +55,208 @@
 *******************************************************************************/
 int main(void)
 {
-  //u16 i;     
-  //----------------------------------- 
+  //u16 i;
+  //-----------------------------------
   u8 OKorNG;
-  u8 Retry=0;
+  u8 Retry = 0;
   // u8 ProgramID;
   //u16 OKCnt=0;
   /* System Clocks Configuration */
   RCC_Configuration();
   /* Configure the GPIO ports */
-  GPIO_Configuration(); 
+  GPIO_Configuration();
 
 //  NVIC_SetVectorTable(NVIC_VectTab_FLASH,0x4000);
-  #ifdef SINOMCU_IAP
-    NVIC_SetVectorTable(NVIC_VectTab_FLASH,0x4000);
-  #endif
-    
-  LEDOK_Off;
-  LEDNG_Off;
-  LEDBUSY_Off;
- 
+// zwr: ËøôÂè•ÂèØ‰ª•Ê≥®ÈáäÊéâÂêóÔºü
+#ifdef SINOMCU_IAP
+  NVIC_SetVectorTable(NVIC_VectTab_FLASH, 0x4000);
+#endif
+
+  LEDOK_Off;   // zwr: GPIOC.10
+  LEDNG_Off;   // zwr: GPIOC.11
+  LEDBUSY_Off; // zwr: GPIOC.12
+
   //USB_REG_Off;
-  IRCInitial();//OSCO °¢OSCI”√≤ª…œ
-  
+  IRCInitial(); //OSCO ÔøΩÔøΩOSCIÔøΩ√≤ÔøΩÔøΩÔøΩ
+
   ConfigTimer();
   ConfigTIM4();
   /* spi2 configuration  */
   SPI2Init();
   //IIC initial
-  IRCInitial();
+  IRCInitial(); //zwr: ‰∏∫‰ªÄ‰πàÊâßË°å‰∫Ü2Ê¨°
   /* ADC initail  */
   ADC_Config();
   //DMA_Config();
 
-  PowerInitial();
+  PowerInitial(); //zwr: ÁîµÊ∫êÂàùÂßãÂåñÔºåÂÖ®ÈÉ®ÂÖ≥
 
-  OTPInit();
+  OTPInit(); //zwr: SCK, SDI set to 0
   VDD30V_Off;
-  POWER_OFF(vpp00,vdd00);
+  POWER_OFF(vpp00, vdd00); //zwr: ‰∏∫‰ªÄ‰πàÁîµÊ∫êÂèàÂÖ≥‰∏ÄÈÅç
   Power18V_On;
-   
-  GPIO_SetBits(GPIOA,GPIO_Pin_10);//∑‰√˘∆˜œÏ
+
+  GPIO_SetBits(GPIOA, GPIO_Pin_10); //zwr: Ëøô‰∏™ÂºïËÑöÁøªËΩ¨‰∏ÄÊ¨°Ôºå‰∏îÂª∂Êó∂300msÔºüÂÅö‰ªÄ‰πàÁî®
   Delay_1ms(300);
-  GPIO_ResetBits(GPIOA,GPIO_Pin_10);
-  
-  OKorNG=1;
-  OKcounter=0;
-  NGcounter=0;
-  ERORR_VALUE=0;
+  GPIO_ResetBits(GPIOA, GPIO_Pin_10);
+
+  OKorNG = 1;
+  OKcounter = 0;
+  NGcounter = 0;
+  ERORR_VALUE = 0;
   //MCP42050_ADJ(ADJ_VPP,150);//vpp value
   //MCP42050_ADJ(ADJ_VDD,51); //vdd value
   //OKorNG =TestAdc();
 
   //adj_vdd
-  Retry=GPIO_ReadInputData(GPIOD);
-  if(Retry==0xff) 
+  Retry = GPIO_ReadInputData(GPIOD);
+  if (Retry == 0xff)
     Writer_Test();
-  
+
   //else
   //  Retry &=0x07 ;
   //  switch(Retry)
   //{
-	 // case 0:
-		//  DeviceConfig_xx=DeviceConfig_M224;
+  // case 0:
+  //  DeviceConfig_xx=DeviceConfig_M224;
 
-		//  MCP42050_ADJ(ADJ_VDD,51);
-		//  break;
-	 // case 1:
-		//  DeviceConfig_xx=DeviceConfig_M202;
-		//  MCP42050_ADJ(ADJ_VDD,51);		 
-		//  break;
-	 // case 2: //mc20p34
-		//  DeviceConfig_xx=DeviceConfig_M238;
-		//  MCP42050_ADJ(ADJ_VDD,51);
+  //  MCP42050_ADJ(ADJ_VDD,51);
+  //  break;
+  // case 1:
+  //  DeviceConfig_xx=DeviceConfig_M202;
+  //  MCP42050_ADJ(ADJ_VDD,51);
+  //  break;
+  // case 2: //mc20p34
+  //  DeviceConfig_xx=DeviceConfig_M238;
+  //  MCP42050_ADJ(ADJ_VDD,51);
   //        MCP42050_ADJ(ADJ_VPP,150);//vpp value
-		//  break;
-	 // case 0x03:
-		//  DeviceConfig_xx=DeviceConfig_M102R;
-		//  MCP42050_ADJ(ADJ_VDD,25);                  	  
+  //  break;
+  // case 0x03:
+  //  DeviceConfig_xx=DeviceConfig_M102R;
+  //  MCP42050_ADJ(ADJ_VDD,25);
   //        break;
-	 // case 0x04:
-		//  DeviceConfig_xx=DeviceConfig_M111;
-		//  MCP42050_ADJ(ADJ_VDD,25);                  	  
-		//  break;
-	 // case 0x05:
-		//  DeviceConfig_xx=DeviceConfig_M101;
-		//  MCP42050_ADJ(ADJ_VDD,25);
-		//  break;
+  // case 0x04:
+  //  DeviceConfig_xx=DeviceConfig_M111;
+  //  MCP42050_ADJ(ADJ_VDD,25);
+  //  break;
+  // case 0x05:
+  //  DeviceConfig_xx=DeviceConfig_M101;
+  //  MCP42050_ADJ(ADJ_VDD,25);
+  //  break;
   //       case 0x07:
   //        DeviceConfig_xx=DeviceConfig_T201;
-		//  MCP42050_ADJ(ADJ_VDD,51);
-		//  break;
-	 // case  0xff:
-		//  Writer_Test();
-		//  break;
-	 // default:
-		//  //ProgramID=3;
-		//  MCP42050_ADJ(ADJ_VDD,57);
+  //  MCP42050_ADJ(ADJ_VDD,51);
+  //  break;
+  // case  0xff:
+  //  Writer_Test();
+  //  break;
+  // default:
+  //  //ProgramID=3;
+  //  MCP42050_ADJ(ADJ_VDD,57);
   //}
 
-  DeviceConfig(); //no use this funtion when key select type 
+  DeviceConfig(); //no use this funtion when key select type
   //DeviceConfig_xx.ProVPP=0x46;
-  MCP42050_ADJ(ADJ_VPP,(u8)DeviceConfig_xx.ProVPP);//vpp value
-  MCP42050_ADJ(ADJ_VDD,(u8)DeviceConfig_xx.IrcVDD); 
-//  MCP42050_ADJ(ADJ_VDD,25);
-//  DeviceConfig_xx.ProgramID=0x04;
-//  DeviceConfig_xx.MCU_ID=0x5222;
-  
-    
-  USB_RxDataCS=CalculateCheckSum();
-  if(DeviceConfig_xx.MCU_ID==0x3081||DeviceConfig_xx.MCU_ID==0x6060)
+  MCP42050_ADJ(ADJ_VPP, (u8)DeviceConfig_xx.ProVPP); //vpp value
+  MCP42050_ADJ(ADJ_VDD, (u8)DeviceConfig_xx.IrcVDD);
+  //  MCP42050_ADJ(ADJ_VDD,25);
+  //  DeviceConfig_xx.ProgramID=0x04;
+  //  DeviceConfig_xx.MCU_ID=0x5222;
+
+  USB_RxDataCS = CalculateCheckSum();
+  if (DeviceConfig_xx.MCU_ID == 0x3081 || DeviceConfig_xx.MCU_ID == 0x6060)
   {
     USB_RxDataCS &= 0x3fff;
   }
-  else if(DeviceConfig_xx.MCU_ID==0x3401)
+  else if (DeviceConfig_xx.MCU_ID == 0x3401)
   {
     USB_RxDataCS &= 0x1fff;
   }
-  
+
   //----------LCD display initial --------------------------
-  for(Retry=0;Retry<IIC_DATA_BUFF_SIZE;Retry++) // dynamic id
+  for (Retry = 0; Retry < IIC_DATA_BUFF_SIZE; Retry++) // dynamic id
   {
-    iic_data[Retry]=IIC_Read(Retry);
+    iic_data[Retry] = IIC_Read(Retry);
   }
   Initial_Lcd();
 
-  displayfuntion();//LCD 
+  displayfuntion(); //LCD
   //Power18V_Off;
   //-----------------------------------
-    
+
   Set_System();
   Set_USBClock();
   USB_Init();
   USB_REG_On;
   USB_Interrupts_Config();
 
-  //-------------------------------------  
-  USB_Rx_Flag=0x00;
-  USB_RxCommand=0x00;
+  //-------------------------------------
+  USB_Rx_Flag = 0x00;
+  USB_RxCommand = 0x00;
   StateFlag = 0xfe;
 
-//  MC32P8132_Program();
-  while (1) 
-  {  	
+  //  MC32P8132_Program();
+  while (1)
+  {
     //RCC_MCOConfig(RCC_MCO_NoClock);
     //RCC_MCOConfig(RCC_MCO_PLLCLK_Div2);
-         
-    if(USB_Rx_Flag==0xaa && USB_Rx_Buffer[0]==0x68)
+
+    if (USB_Rx_Flag == 0xaa && USB_Rx_Buffer[0] == 0x68)
     {
       USB_Rx_Tx();
       //Retry=0;
     }
-    else if(USB_Rx_Flag ==0xaa && USB_Rx_Buffer[0]!=0x68)
+    else if (USB_Rx_Flag == 0xaa && USB_Rx_Buffer[0] != 0x68)
     {
-      USB_Rx_Flag=0x00;
+      USB_Rx_Flag = 0x00;
       //#ifndef STM32F10X_CL
       /* Enable the receive of data on EP3 */
-         SetEPRxValid(ENDP3);
+      SetEPRxValid(ENDP3);
       //#endif /* STM32F10X_CL */
-    }   
+    }
     //----------------------------------
     //---------------- key scan ---------------------------------
-    if (GPIO_ReadInputDataBit(KEY)==0)
+    if (GPIO_ReadInputDataBit(KEY) == 0)
     {
       Delay_1ms(5);
-      if (GPIO_ReadInputDataBit(KEY)==0)
+      if (GPIO_ReadInputDataBit(KEY) == 0)
       {
         StateFlag = GPIO_ReadInputData(GPIOD) & 0x00fe;
         //StateFlag = WR_Command; //
         LEDNG_Off;
         LEDOK_Off;
 
-        for(Retry=0;Retry<IIC_DATA_BUFF_SIZE;Retry++) // dynamic id
+        for (Retry = 0; Retry < IIC_DATA_BUFF_SIZE; Retry++) // dynamic id
         {
-           iic_data[Retry]=IIC_Read(Retry);
+          iic_data[Retry] = IIC_Read(Retry);
         }
       }
-      while( GPIO_ReadInputDataBit(KEY)==0 );  
-    } 
+      while (GPIO_ReadInputDataBit(KEY) == 0)
+        ;
+    }
     //----------------------------------------------
     if (StateFlag != 0xfe)
     {
       LEDBUSY_On;
       LEDNG_Off;
       LEDOK_Off;
-      Retry=0;
-      if ((StateFlag & 0x80)==0) //Read
+      Retry = 0;
+      if ((StateFlag & 0x80) == 0) //Read
       {
-        //Read command -------------------------				
-        StateFlag |= 0x08 ;//IF Read active,don't Write mcu
+        //Read command -------------------------
+        StateFlag |= 0x08; //IF Read active,don't Write mcu
 
         //OKorNG=OTP_DownLoad();
-        while(++Retry <10)
+        while (++Retry < 10)
         {
-          if (OTP_DownLoad(DeviceConfig_xx.MCU_ID,DeviceConfig_xx.RomFirAddr))
+          if (OTP_DownLoad(DeviceConfig_xx.MCU_ID, DeviceConfig_xx.RomFirAddr))
           {
-            OKorNG=1;
+            OKorNG = 1;
             break;
           }
-          else if(Retry ==8)
+          else if (Retry == 8)
           {
-            OKorNG =0;
+            OKorNG = 0;
             break;
           }
         }
@@ -263,33 +264,33 @@ int main(void)
       }
 
       //blank
-      if ((StateFlag & 0x20)==0) 
+      if ((StateFlag & 0x20) == 0)
       {
         //Check Blank command
         LEDBUSY_On;
         LEDBUSY_Off;
       }
       //Write ---------------------------------
-      if ((StateFlag & 0x08)==0) 
+      if ((StateFlag & 0x08) == 0)
       {
-        //OKorNG=OTP_Program(); 
-        while(++Retry <5)
+        //OKorNG=OTP_Program();
+        while (++Retry < 5)
         {
-          if (DeviceConfig_xx.ProgramID==0x00)
+          if (DeviceConfig_xx.ProgramID == 0x00)
           {
-            if(DeviceConfig_xx.MCU_ID==0x202)
+            if (DeviceConfig_xx.MCU_ID == 0x202)
             {
               if (MC20P02B_Program())
               {
-                OKorNG=1;
+                OKorNG = 1;
                 break;
-              }              
+              }
             }
             else
             {
               if (MC224B_Program())
               {
-                OKorNG=1;
+                OKorNG = 1;
                 break;
               }
             }
@@ -302,125 +303,125 @@ int main(void)
           //		break;
           //	}
           //}
-          else if(DeviceConfig_xx.ProgramID ==0X02) //M111
+          else if (DeviceConfig_xx.ProgramID == 0X02) //M111
           {
             if (MC301_Program())
             {
-              OKorNG=1;
+              OKorNG = 1;
               break;
             }
           }
-          else if(DeviceConfig_xx.ProgramID ==0X03) //M20P38
+          else if (DeviceConfig_xx.ProgramID == 0X03) //M20P38
           {
             if (MC20P38_Program())
             {
-              OKorNG=1;
+              OKorNG = 1;
               break;
             }
           }
-          else if (DeviceConfig_xx.ProgramID==0x04) //MC32P21
+          else if (DeviceConfig_xx.ProgramID == 0x04) //MC32P21
           {
-          //  if (MC32P21_Program())//“‘«∞µƒ
-            if (MC32P21_Program_New())//œ÷‘⁄µƒ 
+            //  if (MC32P21_Program())//ÔøΩÔøΩ«∞ÔøΩÔøΩ
+            if (MC32P21_Program_New()) //ÔøΩÔøΩÔøΩ⁄µÔøΩ
             {
-              OKorNG=1;
-              break;//–Ï√˜√˜º”◊¢ Õ£∫…’–¥≥…π¶£¨ÕÀ≥ˆÀ˘‘⁄µƒwhile—≠ª∑
+              OKorNG = 1;
+              break; //ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ◊¢ÔøΩÕ£ÔøΩÔøΩÔøΩ–¥ÔøΩ…πÔøΩÔøΩÔøΩÔøΩÀ≥ÔøΩÔøΩÔøΩÔøΩ⁄µÔøΩwhile—≠ÔøΩÔøΩ
             }
           }
-          else if (DeviceConfig_xx.ProgramID==0x05) //MC9033
+          else if (DeviceConfig_xx.ProgramID == 0x05) //MC9033
           {
             if (MC9033_Promgram())
             {
-              OKorNG=1;
-              break;//–Ï√˜√˜º”◊¢ Õ£∫…’–¥≥…π¶£¨ÕÀ≥ˆÀ˘‘⁄µƒwhile—≠ª∑
+              OKorNG = 1;
+              break; //ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ◊¢ÔøΩÕ£ÔøΩÔøΩÔøΩ–¥ÔøΩ…πÔøΩÔøΩÔøΩÔøΩÀ≥ÔøΩÔøΩÔøΩÔøΩ⁄µÔøΩwhile—≠ÔøΩÔøΩ
             }
           }
           //if(Retry ==3)
-          if(Retry ==1)//≤‚ ‘”√
+          if (Retry == 1) //ÔøΩÔøΩÔøΩÔøΩÔøΩÔøΩ
           {
-            OKorNG =0;
+            OKorNG = 0;
             break;
           }
           FM_CS_1;
-          POWER_OFF(vpp00,vdd00);
+          POWER_OFF(vpp00, vdd00);
           //ConfigTimer();
           ConfigTIM4();
           Delay_1ms(100);
           Delay_1ms(200);
         }
-        // ok counter & dynamic id process 
+        // ok counter & dynamic id process
         if (OKorNG)
         {
-          OKcounter=OKcounter+1;
-          OKorNG=dynamic_id_add(); 
-        } 
+          OKcounter = OKcounter + 1;
+          OKorNG = dynamic_id_add();
+        }
         else
         {
-          NGcounter=NGcounter+1;
+          NGcounter = NGcounter + 1;
         }
-        if(USB_RxCommand ==0x01)
-        {	
-          if (OKorNG==1)
+        if (USB_RxCommand == 0x01)
+        {
+          if (OKorNG == 1)
           {
-            for(Retry=0;Retry<5;Retry++)
+            for (Retry = 0; Retry < 5; Retry++)
             {
-              USB_Tx_Buffer[Retry]=ProgrammingFinished[Retry];
+              USB_Tx_Buffer[Retry] = ProgrammingFinished[Retry];
             }
             USB_SendData(5);
-          } 
+          }
           else
           {
-            USB_Tx_Buffer[0]=0x68;
-            USB_Tx_Buffer[1]=0x06;
-            USB_Tx_Buffer[2]=0xf2;
-            USB_Tx_Buffer[3]=0x03;
-            USB_Tx_Buffer[4]=OTP_ADDR/0x100;
-            USB_Tx_Buffer[5]=OTP_ADDR%0x100;
-            USB_Tx_Buffer[6]=Rxdata;
-            USB_Tx_Buffer[7]=OTP_ReadData;
-            USB_Tx_Buffer[8]=0xfb + USB_Tx_Buffer[4] +USB_Tx_Buffer[5]+USB_Tx_Buffer[6]+USB_Tx_Buffer[7];
-            USB_Tx_Buffer[9]=0x16;
+            USB_Tx_Buffer[0] = 0x68;
+            USB_Tx_Buffer[1] = 0x06;
+            USB_Tx_Buffer[2] = 0xf2;
+            USB_Tx_Buffer[3] = 0x03;
+            USB_Tx_Buffer[4] = OTP_ADDR / 0x100;
+            USB_Tx_Buffer[5] = OTP_ADDR % 0x100;
+            USB_Tx_Buffer[6] = Rxdata;
+            USB_Tx_Buffer[7] = OTP_ReadData;
+            USB_Tx_Buffer[8] = 0xfb + USB_Tx_Buffer[4] + USB_Tx_Buffer[5] + USB_Tx_Buffer[6] + USB_Tx_Buffer[7];
+            USB_Tx_Buffer[9] = 0x16;
             USB_SendData(10);
           }
         }
         //POWER_OFF(vpp00,vdd00);
       }
       //----------------------------------------
-      if ((StateFlag & 0x10)==0) //Verify
+      if ((StateFlag & 0x10) == 0) //Verify
       {
-        //POWER_ON(vpp12,vdd65); 
+        //POWER_ON(vpp12,vdd65);
         //Delay_1ms(50);
-        if (DeviceConfig_xx.ProgramID==0x03)
+        if (DeviceConfig_xx.ProgramID == 0x03)
         {
-          OKorNG=OTP8K_Verify();
-        } 
+          OKorNG = OTP8K_Verify();
+        }
         else
         {
-          OKorNG=OTP_Verify( );
-        }    
-        POWER_OFF(vpp00,vdd00);
+          OKorNG = OTP_Verify();
+        }
+        POWER_OFF(vpp00, vdd00);
       }
       //----------------------------------------
       //if ((StateFlag & 0x40)==0) //Protect
       //{
-      //	LEDBUSY_On;				
+      //	LEDBUSY_On;
       //	LEDBUSY_Off;
       //}
 
       FM_CS_1;
-      POWER_OFF(vpp00,vdd00);
+      POWER_OFF(vpp00, vdd00);
       ConfigTIM4();
       LEDBUSY_Off;
 
       Freq(OKorNG);
 
-      StateFlag=0xfe;
-      USB_RxCommand=0x00;
+      StateFlag = 0xfe;
+      USB_RxCommand = 0x00;
       //Delay_1ms(200);
       //Delay_1ms(200);
       //while(GPIO_ReadInputDataBit(KEY)==0); //waite key off
-    } 
-  }//whil(1)
+    }
+  } //whil(1)
 }
 #ifdef USE_FULL_ASSERT
 /*******************************************************************************
@@ -432,14 +433,15 @@ int main(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void assert_failed(uint8_t* file, uint32_t line)
+void assert_failed(uint8_t *file, uint32_t line)
 {
   /* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
 
   /* Infinite loop */
   while (1)
-  {}
+  {
+  }
 }
 #endif
 
